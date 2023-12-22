@@ -34,11 +34,11 @@ const Login = ({ setToken }) => {
                         <h1 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '1rem', textAlign: 'center' }}>Sign Up Here</h1>
                         <form onSubmit={handleSubmit} className='w-full flex flex-col py-4'>
                             <p className='text-white font-bold'>Username</p>
-                            <input type="text" required onChange={(e) => setPassword(e.target.value)} className='p-3 my-2 rounded text-black' placeholder='Akbar Abayev' />
+                            <input type="text" required onChange={(e) => setPassword(e.target.value)} className='p-3 my-2 rounded text-black' placeholder='Username' />
                             <p className='text-white font-bold'>Password</p>
                             <input type="password" required onChange={(e) => setUserName(e.target.value)} className='p-3 my-2 rounded text-black' placeholder='Please enter a strong password' />
                             <p className='text-white font-bold'>email</p>
-                            <input type="password" required onChange={(e) => setEmail(e.target.value)} className='p-3 my-2 rounded text-black' placeholder='Please enter a strong password' />
+                            <input type="password" required onChange={(e) => setEmail(e.target.value)} className='p-3 my-2 rounded text-black' placeholder='Please enter a valid email address' />
                             <button type="submit" className='bg-red-700 py-3 my-6 rounded font-bold px-4'>Submit</button>
 
                             <div>
