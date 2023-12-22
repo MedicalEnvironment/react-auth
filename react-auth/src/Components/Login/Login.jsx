@@ -14,12 +14,14 @@ async function LoginUser(credentials) {
 const Login = ({ setToken }) => {
     const [userName, setUserName] = useState()
     const [password, setPassword] = useState()
+    const [email, setEmail] = useState()
 
     const handleSubmit = async (e) => {
         e.preventDefault()
         const token = await LoginUser({
             userName,
-            password
+            password,
+            email
         })
         setToken(token)
     }
@@ -35,6 +37,8 @@ const Login = ({ setToken }) => {
                             <input type="text" required onChange={(e) => setPassword(e.target.value)} className='p-3 my-2 rounded text-black' placeholder='Akbar Abayev' />
                             <p className='text-white font-bold'>Password</p>
                             <input type="password" required onChange={(e) => setUserName(e.target.value)} className='p-3 my-2 rounded text-black' placeholder='Please enter a strong password' />
+                            <p className='text-white font-bold'>email</p>
+                            <input type="password" required onChange={(e) => setEmail(e.target.value)} className='p-3 my-2 rounded text-black' placeholder='Please enter a strong password' />
                             <button type="submit" className='bg-red-700 py-3 my-6 rounded font-bold px-4'>Submit</button>
 
                             <div>
