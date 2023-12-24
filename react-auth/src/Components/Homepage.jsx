@@ -1,22 +1,40 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react"
+import { useNavigate } from "react-router-dom";
 
-const Homepage = () => {
-    return (
-        <div style={{ textAlign: 'center', color: 'black' }}>
-            <img
-                src="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-facebook-512.png"
-                alt="Facebook Logo"
-                style={{ width: '100px', height: '100px', marginBottom: '1rem' }}
-            />
-            <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '1rem' }}>Welcome to the Social Network</h2>
-            <Link to="/Dashboard">
-                <button style={{ background: '#008000', color: 'white', fontWeight: 'bold', padding: '1rem 2rem', borderRadius: '999px' }}>
-                    Register/Login here
-                </button>
-            </Link>
+const Home = (props) => {
+    const { loggedIn, email } = props
+    const navigate = useNavigate();
+    
+    const onButtonClick = () => {
+        if (loggedIn) {
+            localStorage.removeItem("user")
+            props.setLoggedIn(false)
+        } else {
+            navigate("/login")
+        }
+    }
+
+
+    return <div className="mainContainer">
+        <div className={"titleContainer"}>
+            <div>Welcome!</div>
         </div>
-    );
-};
+        <div>
+            This is the home page.
+        </div>
+        <div className={"buttonContainer"}>
+            <input
+                className={"inputButton"}
+                type="button"
+                onClick={onButtonClick}
+                value={loggedIn ? "Log out" : "Log in"} />
+            {(loggedIn ? <div>
+                Your email address is {email}
+            </div> : <div/>)}
+        </div>
 
-export default Homepage;
+
+    </div>
+}
+
+export default Home

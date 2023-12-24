@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "email": "asdas@mail.com",
+      "password": "$2b$10$5Xv/J5oZRVvO/hgsJnGNguCASuHiVEsCNsOgNQ/x7pqn4dbjxd9EG"
+    },
+    {
+      "email": "sdadasd@mail.com",
+      "password": "$2b$10$e6.zi54EMKteIUFQCFLLru8H6byd3ZuznsEv/y/PuQBvMVeogq1Ri"
+    },
+    {
+      "email": "akbar@mail.com",
+      "password": "$2b$10$3e8sJn6BUV4T3G5CmmHifuaVGBqNiTITGP7esqz1oAwRbe6Ledjcy"
+    },
+    {
+      "email": "zalupa@mail.com",
+      "password": "$2b$10$BvM5gK1fulA9Rz9EWJpuf.347eo2Ez3HDp93OBlnv/lpZG9cdehK6"
+    },
+    {
+      "email": "asdadas@masd.com",
+      "password": "$2b$10$oeuxHsAs9F5Ts1mIuZ1xQOocdS90XKKmccDPAM8CIDyZp7DsvDUC2"
+    },
+    {
+      "email": "pizda@mail.com",
+      "password": "$2b$10$ZrtHEuvVv645h171tHpxT.rKQ5CRY4oS6DtMj8khBonR91hmjyaWW"
+    },
+    {
+      "email": "aasdadssd@mail.com",
+      "password": "$2b$10$VwXlAyA/5c7SOQ4FFgBfAO6mEvBhqbXil4qSlcvOLiiPAAWKbpMWy"
+    }
+  ]
+}
